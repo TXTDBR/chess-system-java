@@ -1,0 +1,18 @@
+package chess;
+
+import bordegame.Board;
+import bordegame.Piece;
+
+public class ChessPiece extends Piece{
+
+	private Color color;
+	
+	public ChessPiece(Board bord, Color color) {
+		super(bord);
+		this.color = color;
+	}
+
+	public Color getColor() {
+		return color;
+	}
+}

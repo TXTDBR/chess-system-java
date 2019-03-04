@@ -27,4 +27,12 @@ public class Board {
 	public void setCol(int col) {
 		this.col = col;
 	}
+	
+	public Piece piece(int row, int col) {
+		return this.pieces[row][col];
+	}
+	//sobrecarga de metodo
+	public Piece piece(Position position) {
+		return this.pieces[position.getRow()][position.getCol()];
+	}
 }
